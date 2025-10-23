@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SurpriseVista | Coming Soon</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(135deg, #ff7eb3, #ff758c, #ffa86f);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+  img.logo {
+  width: 300px;        /* Increase logo size */
+  height: auto;
+  margin-bottom: 1rem; /* Add more space below */
+  margin-top: 1rem;    /* Add some top padding */
+}
+
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      letter-spacing: 1px;
+    }
+
+    .tagline {
+      font-size: 1.2rem;
+      font-style: italic;
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      max-width: 400px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 1.5rem;
+      border-radius: 15px;
+      width: 100%;
+      max-width: 350px;
+    }
+
+    input {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: none;
+      border-radius: 10px;
+      outline: none;
+      font-size: 1rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+      background: rgba(255, 255, 255, 0.9);
+      color: #333;
+    }
+
+    button {
+      background-color: #fff;
+      color: #ff758c;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 50px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+      font-weight: 600;
+    }
+
+    button:hover {
+      background-color: #ffebef;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 15px;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+
+    .thank-you {
+      display: none;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <!-- Logo Placeholder -->
+  <img src="C:\Users\admin\Desktop\Gifting solutions\Images\SupriseVistalogo.png" alt="SurpriseVista Logo" class="logo">
+
+ 
+  <h2>We’re Launching Soon!</h2>
+  <p>Exciting gifts and curated surprises are on the way. Leave your details to get early access and exclusive offers!</p>
+
+  <form id="enquiryForm">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Email Address" required>
+    <input type="tel" id="phone" placeholder="Mobile Number" required>
+    <button type="submit">Notify Me</button>
+  </form>
+
+  <div class="thank-you" id="thankYouMessage">
+    🎉 Thank you! We'll notify you once we launch.
+  </div>
+
+  <footer>© 2025 SurpriseVista. All Rights Reserved.</footer>
+
+  <script>
+    const form = document.getElementById('enquiryForm');
+    const thankYou = document.getElementById('thankYouMessage');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      form.style.display = 'none';
+      thankYou.style.display = 'block';
+    });
+  </script>
+</body>
+</html>
